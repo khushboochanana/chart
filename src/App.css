@@ -31,12 +31,11 @@
     transform: rotate(360deg);
   }
 }.dash{
-   border-top: 1px dashed #87ce96;
-   height: 34px;
-   border-left: 1px solid #262626;
-   /* background-color: #93cea2; */
-   /* float: right; */
-   margin-left: 11.7%;
-   margin-bottom: -2.5%;
-   margin-top: -2%;
+     border-top: 1px dashed #87ce96;
+     /* border-left: 1px solid #262626; */
+     /* background-color: #93cea2; */
+     /* float: right; */
+     margin-left: 9.7%;
+      margin-bottom: -2%;
+      margin-top: -2%;
  }

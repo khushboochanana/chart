@@ -95,9 +95,18 @@ export default class App extends Component {
                         ticks: {
                             dispaly: true,
                             beginAtZero: true,
-                            max: 100,
+                            max: 120,
                             min: 40,
                             stepSize: 20,
+                            callback: (label:any, index:number)=> {
+                                console.log(label)
+                                if(label===120){
+                                    return ''
+                                }
+                                else{
+                                    return label
+                                }
+                            }
                         },
                         gridLines: {
                             drawOnChartArea: false,
@@ -105,6 +114,7 @@ export default class App extends Component {
                             tickMarkLength: 10,
                             color: 'black',
                         }
+
                     }],
                     xAxes: [{
                         barPercentage: 1,
@@ -146,7 +156,7 @@ export default class App extends Component {
                             <ChartView type="line" data={this.state.map1.data} options={this.state.map1.options}/>
                         </div>
 
-                        <div style={{'marginTop':'-7px'}}>
+                        <div>
                             <div className="dash"></div>
                             <ChartView type="line" data={this.state.map2.data} options={this.state.map2.options}/>
                         </div>

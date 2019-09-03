@@ -12,7 +12,8 @@ export default class App extends Component {
                 datasets: [{
                     label: "Exceptions",
                     data: [1, 0.2, 0.5, 1, 1.8],
-                    borderColor: "#93cea2",
+                    borderColor: "#4c905d",
+                    borderWidth:1,
                     backgroundColor: "#93cea2bf",
                 }]
             }, options: {
@@ -36,7 +37,10 @@ export default class App extends Component {
                 },
                 scales: {
                     yAxes: [{
+                        barPercentage: 1,
+                        categoryPercentage: 1,
                         ticks: {
+                            beginAtZero: true,
                             dispaly: true,
                             max: 2,
                             min: 0,
@@ -50,6 +54,8 @@ export default class App extends Component {
                         }
                     }],
                     xAxes: [{
+                        barPercentage: 1,
+                        categoryPercentage: 1,
                         display: false,
                     }]
                 },
@@ -66,7 +72,8 @@ export default class App extends Component {
                 datasets: [{
                     fill: 'origin',
                     label: 'Trades',
-                    borderColor: "#93cea2",
+                    borderColor: "#4c905d",
+                    borderWidth:1,
                     backgroundColor: "#93cea2bf",
                     data: [100, 80, 84, 52, 90]
                 }]
@@ -83,8 +90,11 @@ export default class App extends Component {
                 },
                 scales: {
                     yAxes: [{
+                        barPercentage: 1,
+                        categoryPercentage: 1,
                         ticks: {
                             dispaly: true,
+                            beginAtZero: true,
                             max: 100,
                             min: 40,
                             stepSize: 20,
@@ -97,6 +107,8 @@ export default class App extends Component {
                         }
                     }],
                     xAxes: [{
+                        barPercentage: 1,
+                        categoryPercentage: 1,
                         gridLines: {
                             drawOnChartArea: false,
                             lineWidth: 1,
